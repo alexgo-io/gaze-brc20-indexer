@@ -1,4 +1,4 @@
-FROM golang:1.22 as builder
+FROM golang:1.24.1 as builder
 
 WORKDIR /app
 
@@ -19,10 +19,9 @@ WORKDIR /app
 
 RUN apk --no-cache add ca-certificates tzdata
 
-COPY --from=builder /app/main .
-COPY --from=builder /app/modules ./modules
+COPY --from=builder /app/main /usr/local/bin/brc20-indexer
 
 # You can set TZ identifier to change the timezone, See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 # ENV TZ=US/Central
 
-ENTRYPOINT ["/app/main"]
+ENTRYPOINT ["brc20-indexer"]

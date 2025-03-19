@@ -34,9 +34,9 @@ It comes with a set of APIs for querying historical Runes data. See our [API Ref
 #### 1. Hardware Requirements
 
 Each module requires different hardware requirements.
-| Module | CPU       | RAM  |
+| Module | CPU | RAM |
 | ------ | --------- | ---- |
-| Runes  | 0.5 cores | 1 GB |
+| Runes | 0.5 cores | 1 GB |
 
 #### 2. Prepare Bitcoin Core RPC server.
 
@@ -49,7 +49,7 @@ Gaze Indexer has first-class support for PostgreSQL. If you wish to use other da
 Here is our minimum database disk space requirement for each module.
 | Module | Database Storage (current) | Database Storage (in 1 year) |
 | ------ | -------------------------- | ---------------------------- |
-| Runes  | 10 GB                      | 150 GB                       |
+| Runes | 10 GB | 150 GB |
 
 #### 4. Prepare `config.yaml` file.
 
@@ -113,7 +113,7 @@ services:
       - 8080:8080 # Expose HTTP server port to host
     volumes:
       - "./config.yaml:/app/config.yaml" # mount config.yaml file to the container as "/app/config.yaml"
-    command: ["/app/main", "run", "--modules", "runes"] # Put module flags after "run" commands to select which modules to run.
+    command: ["run", "--modules", "runes"] # Put module flags after "run" commands to select which modules to run.
 ```
 
 ### Install from source
