@@ -7,7 +7,7 @@ on:
       - "v**" # e.g. v1.0.0
 
 env:
-  IMAGE_REPO: ghcr.io/gaze-network/gaze-indexer
+  IMAGE_REPO: ghcr.io/alexgo-io/gaze-brc20-indexer
 
 jobs:
   prepare:
@@ -33,5 +33,5 @@ jobs:
     with:
       context: .
       dockerfile: Dockerfile
-      image-repo: "ghcr.io/gaze-network/gaze-indexer"
+      image-repo: "ghcr.io/alexgo-io/gaze-brc20-indexer"
       image-tag: ${{ needs.prepare.outputs.tag }}
