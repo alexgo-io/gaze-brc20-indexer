@@ -1,6 +1,6 @@
 module github.com/gaze-network/indexer-network
 
-go 1.22
+go 1.24.0
 
 require (
 	github.com/Cleverse/go-utilities/utils v0.0.0-20240119201306-d71eb577ef11
@@ -25,7 +25,7 @@ require (
 	github.com/stretchr/testify v1.9.0
 	github.com/valyala/fasthttp v1.51.0
 	go.uber.org/automaxprocs v1.5.3
-	golang.org/x/sync v0.7.0
+	golang.org/x/sync v0.18.0
 )
 
 require (
@@ -47,7 +47,7 @@ require (
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
-	github.com/holiman/uint256 v1.2.4 // indirect
+	github.com/holiman/uint256 v1.2.4
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a // indirect
@@ -63,7 +63,7 @@ require (
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.1.0 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
+	github.com/pkg/errors v0.9.1
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
@@ -78,10 +78,10 @@ require (
 	github.com/valyala/tcplisten v1.0.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.9.0 // indirect
-	golang.org/x/crypto v0.23.0 // indirect
-	golang.org/x/exp v0.0.0-20240525044651-4c93da0ed11d // indirect
-	golang.org/x/sys v0.20.0 // indirect
-	golang.org/x/text v0.15.0 // indirect
+	golang.org/x/crypto v0.45.0 // indirect
+	golang.org/x/exp v0.0.0-20240525044651-4c93da0ed11d
+	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/text v0.31.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
